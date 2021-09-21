@@ -47,8 +47,44 @@ header{
    }
 
 }
+.egg{
+    width: 100%;
+    .transform{
+    width: 50%;
+    float: right;
+}
+
+}
+.glass{
+    width: 50vw;
+}
 
 
+.comments{
+    h3{
+        text-align: center;
+        font-size: 25px;
+        letter-spacing: 2;
+        color: $grey-font;
+    }
+    .photos{
+        list-style: none;
+        display: flex;
+        align-items: stretch;
+        justify-content:space-evenly;
+    }
+    .people{
+        width: 30%;
+		height: 40%;
+		border-radius: 50%;
+        margin: 40px;
+        
+    }
+    .emily{
+        display: flex;
+        justify-content:flex-start;
+    }
+}
 
 .gallery{
     
