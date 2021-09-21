@@ -3,4 +3,122 @@
   margin: 0;
   padding: 0;
 }
+
+header {
+  background-image: url(/img/image-header.jpg);
+  background-size: cover;
+  height: 50vw;
+  max-height: 800px;
+  min-height: 500px;
+}
+
+header nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 30%;
+      grid-template-rows: 30%;
+}
+
+header nav .logo {
+  width: 15vw;
+  padding-left: 5vw;
+  padding-top: 5vw;
+}
+
+header nav ul {
+  color: #fff;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  padding-top: 20px;
+}
+
+header nav ul li {
+  padding-right: 65px;
+  font-size: 20px;
+}
+
+header h1 {
+  text-align: center;
+  color: #fff;
+  margin-top: 4vw;
+  font-size: 7vw;
+  letter-spacing: .2rem;
+}
+
+header .arrow {
+  height: 8vw;
+  padding-top: 3vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
+}
+
+.gallery img {
+  width: 30vw;
+}
+
+.sunnyside {
+  background-color: #A9F1DF;
+  height: 30vw;
+}
+
+.sunnyside .sunny {
+  -webkit-filter: #2F5D62;
+          filter: #2F5D62;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sunnyside .links {
+  list-style: none;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sunnyside .about {
+  margin: 40px;
+  font-size: 20px;
+}
+
+.sunnyside .social-media {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sunnyside .social {
+  padding-top: 30px;
+  margin: 12px;
+}
 /*# sourceMappingURL=style.css.map */
