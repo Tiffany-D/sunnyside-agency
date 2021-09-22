@@ -80,6 +80,9 @@ section .img-container img {
 
 section .text-transform {
   width: 50%;
+  margin-left: 12vw;
+  margin-right: 15vw;
+  margin-top: 12vw;
 }
 
 section .text-transform h2 {
@@ -121,19 +124,21 @@ section .img-container img {
   width: 50vw;
 }
 
+section .text-stand-out {
+  margin-left: 12vw;
+  margin-right: 15vw;
+  margin-top: 12vw;
+}
+
 section h2 {
-  text-align: justify;
   font-family: "Acme", sans-serif;
   font-size: 47px;
-  display: block;
-  margin-left: 0;
-  margin-right: 0;
 }
 
 section p {
-  text-align: justify;
   font-family: "Poppins", sans-serif;
   font-size: 12px;
+  text-align: justify;
 }
 
 section a {
@@ -172,7 +177,7 @@ section a:visited {
   color: #2F5D62;
 }
 
-.row .graphic-design p {
+.row .graphic-design .graphic {
   font-family: "Poppins", sans-serif;
   font-size: 15px;
   text-align: center;
@@ -201,6 +206,10 @@ section a:visited {
   color: #001E6C;
 }
 
+.comments {
+  height: 50vw;
+}
+
 .comments .grid {
   display: -ms-grid;
   display: grid;
@@ -210,7 +219,7 @@ section a:visited {
 }
 
 .comments h3 {
-  margin: 15px;
+  margin: 25px;
   text-align: center;
   font-size: 25px;
   letter-spacing: 2;
@@ -320,14 +329,11 @@ section a:visited {
 }
 
 .sunnyside .sunny {
+  margin-left: 45vw;
+  margin-right: 45vw;
+  margin-top: 7vw;
   -webkit-filter: #2F5D62;
           filter: #2F5D62;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .sunnyside .links {

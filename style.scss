@@ -67,6 +67,9 @@ section{
     }
     .text-transform{
         width: 50%;
+        margin-left: 12vw;
+        margin-right: 15vw;
+        margin-top: 12vw;
         
         
         h2{
@@ -104,19 +107,24 @@ section{
          width: 50vw;
         
     }
+    .text-stand-out{
+        margin-left: 12vw;
+        margin-right: 15vw;
+        margin-top: 12vw;
+    }
     h2{
-        text-align: justify;
+       
+        
         font-family: $font-two;
         font-size: 47px; 
-        display: block;
-        margin-left: 0;
-        margin-right: 0;
+       
         }
 
         p{
-            text-align: justify;
+            
             font-family: $font-stack;
             font-size: 12px;
+            text-align: justify;
         }
 
         a{
@@ -151,11 +159,12 @@ section{
            text-align: center;
            color: $green-title;
        }
-       p{
+       .graphic{
            font-family: $font-stack;
            font-size: 15px;
            text-align: center;
            color: $green-text;
+           
        }
 
    }
@@ -182,15 +191,14 @@ section{
 }
 
 .comments{
+    height: 50vw;
     .grid{
         display: grid;
         grid-template-columns: 32% 32% 32%;
         margin: 20px;
-       
-
     }
     h3{
-        margin: 15px;
+        margin: 25px;
         text-align: center;
         font-size: 25px;
         letter-spacing: 2;
@@ -289,10 +297,12 @@ section{
 .sunnyside{
     background-color: #A9F1DF;
     height: 30vw;
+
     .sunny{
+        margin-left: 45vw;
+        margin-right: 45vw;
+        margin-top: 7vw;
         filter: $green-title;
-        display: flex;
-        justify-content: center;
     }
     .links{
         list-style: none;
