@@ -1,4 +1,6 @@
 /* reset css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +10,7 @@ header {
   background-image: url(/img/image-header.jpg);
   background-size: cover;
   height: 50vw;
+  width: 100vw;
   max-height: 800px;
   min-height: 500px;
 }
@@ -39,10 +42,12 @@ header nav ul {
 
 header nav ul li {
   padding-right: 65px;
+  font-family: "Poppins", sans-serif;
   font-size: 20px;
 }
 
 header h1 {
+  font-family: "Acme", sans-serif;
   text-align: center;
   color: #fff;
   margin-top: 4vw;
@@ -58,20 +63,154 @@ header .arrow {
   margin-right: auto;
 }
 
-.egg {
+section {
   width: 100%;
 }
 
-.egg .transform {
-  width: 50%;
-  float: right;
+section .row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
 }
 
-.glass {
+section .img-container img {
+  width: 55vw;
+}
+
+section .text-transform {
+  width: 50%;
+}
+
+section .text-transform h2 {
+  text-align: justify;
+  font-family: "Acme", sans-serif;
+  font-size: 47px;
+}
+
+section .text-transform p {
+  text-align: justify;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+}
+
+section .text-transform a {
+  text-align: justify;
+  font-family: "Acme", sans-serif;
+  color: #082032;
+  text-decoration: none;
+  font-size: 23px;
+}
+
+section .text-transform a:visited {
+  color: #082032;
+}
+
+section {
+  width: 100%;
+}
+
+section .row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+section .img-container img {
   width: 50vw;
 }
 
+section h2 {
+  text-align: justify;
+  font-family: "Acme", sans-serif;
+  font-size: 47px;
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+section p {
+  text-align: justify;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+}
+
+section a {
+  text-align: justify;
+  font-family: "Acme", sans-serif;
+  color: #082032;
+  text-decoration: none;
+  font-size: 23px;
+}
+
+section a:visited {
+  color: #082032;
+}
+
+.row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 50% 50%;
+      grid-template-rows: 50% 50%;
+}
+
+.row .graphic-design {
+  background-image: url(/img/image-graphic-design.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 42vw;
+  margin-top: 0px;
+}
+
+.row .graphic-design h4 {
+  font-family: "Acme", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  color: #2F5D62;
+}
+
+.row .graphic-design p {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  text-align: center;
+  color: #5E8B7E;
+}
+
+.row .photography {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(/img/image-photography.jpg);
+  height: 42vw;
+  margin-top: 0px;
+}
+
+.row h4 {
+  font-family: "Acme", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  color: #1E3163;
+}
+
+.row p {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  text-align: center;
+  color: #001E6C;
+}
+
+.comments .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 32% 32% 32%;
+      grid-template-columns: 32% 32% 32%;
+  margin: 20px;
+}
+
 .comments h3 {
+  margin: 15px;
   text-align: center;
   font-size: 25px;
   letter-spacing: 2;
@@ -98,13 +237,70 @@ header .arrow {
   margin: 40px;
 }
 
-.comments .emily {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+.comments .emily .submit {
+  padding: 15px;
+  color: #9D9D9D;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+}
+
+.comments .emily h5 {
+  color: #444444;
+  font-size: 19px;
+  font-weight: bolder;
+  font-family: "Acme", sans-serif;
+  text-align: center;
+}
+
+.comments .emily h6 {
+  color: #C8C6C6;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  text-align: center;
+}
+
+.comments .thomas .submit {
+  padding: 15px;
+  color: #9D9D9D;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+}
+
+.comments .thomas h5 {
+  color: #444444;
+  font-size: 19px;
+  font-weight: bolder;
+  font-family: "Acme", sans-serif;
+  text-align: center;
+}
+
+.comments .thomas h6 {
+  color: #C8C6C6;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  text-align: center;
+}
+
+.comments .jennie .submit {
+  padding: 15px;
+  color: #9D9D9D;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+}
+
+.comments .jennie h5 {
+  color: #444444;
+  font-size: 19px;
+  font-weight: bolder;
+  font-family: "Acme", sans-serif;
+  text-align: center;
+}
+
+.comments .jennie h6 {
+  color: #C8C6C6;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  text-align: center;
 }
 
 .gallery {
@@ -151,6 +347,8 @@ header .arrow {
 .sunnyside .about {
   margin: 40px;
   font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
 }
 
 .sunnyside .social-media {

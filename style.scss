@@ -1,10 +1,13 @@
 @import "./variables";
 @import"./resetcss.scss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
      
 header{
    background-image: url(/img/image-header.jpg);
    background-size: cover;
    height: 50vw;
+   width: 100vw;
    max-height: 800px;
    min-height: 500px;
    
@@ -25,6 +28,7 @@ header{
            padding-top: 20px;
          li{
              padding-right:65px ;
+             font-family: $font-stack;
              font-size: 20px;
             
          }
@@ -32,6 +36,7 @@ header{
        }
    }
    h1{
+       font-family: $font-two;
        text-align: center;
        color: $white-font;
        margin-top: 4vw;
@@ -47,21 +52,145 @@ header{
    }
 
 }
-.egg{
+section{
     width: 100%;
-    .transform{
-    width: 50%;
-    float: right;
+    .row{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        
+        
+
+    }
+    .img-container img{
+        width: 55vw;
+
+    }
+    .text-transform{
+        width: 50%;
+        
+        
+        h2{
+            text-align: justify;
+            font-family: $font-two;
+            font-size: 47px;
+            
+        }
+        p{
+            text-align: justify;
+            font-family: $font-stack;
+            font-size: 12px;
+        }
+        a{
+            text-align: justify;
+            font-family: $font-two;
+            color: $mini-title;
+            text-decoration: none;
+            font-size: 23px;
+            &:visited{
+                color: $mini-title;
+            }
+        }
+    }
 }
 
-}
-.glass{
-    width: 50vw;
-}
+section{
+        width: 100%;
+    .row{
+        display: grid;
+        grid-template-columns: 50% 50%;
 
+    }
+    .img-container img{
+         width: 50vw;
+        
+    }
+    h2{
+        text-align: justify;
+        font-family: $font-two;
+        font-size: 47px; 
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+        }
+
+        p{
+            text-align: justify;
+            font-family: $font-stack;
+            font-size: 12px;
+        }
+
+        a{
+            text-align: justify;
+            font-family: $font-two;
+            color: $mini-title;
+            text-decoration: none;
+            font-size: 23px;
+
+            &:visited{
+            color: $mini-title;
+
+            }
+        }
+    }
+.row{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        
+        
+   .graphic-design{
+       background-image: url(/img/image-graphic-design.jpg);
+       background-size: contain;
+       background-repeat: no-repeat;
+       height: 42vw;
+       margin-top: 0px;
+      
+       h4{
+           font-family: $font-two;
+           font-size: 30px;
+           text-align: center;
+           color: $green-title;
+       }
+       p{
+           font-family: $font-stack;
+           font-size: 15px;
+           text-align: center;
+           color: $green-text;
+       }
+
+   }
+
+   .photography{
+       background-size: contain;
+       background-repeat:no-repeat;
+       background-image: url(/img/image-photography.jpg);
+       height: 42vw;
+       margin-top: 0px;
+   }
+    h4{
+           font-family: $font-two;
+           font-size: 30px;
+           text-align: center;
+           color: $blue-title;
+       }
+       p{
+           font-family: $font-stack;
+           font-size: 15px;
+           text-align: center;
+           color: $blue-text;
+       }
+}
 
 .comments{
+    .grid{
+        display: grid;
+        grid-template-columns: 32% 32% 32%;
+        margin: 20px;
+       
+
+    }
     h3{
+        margin: 15px;
         text-align: center;
         font-size: 25px;
         letter-spacing: 2;
@@ -81,9 +210,72 @@ header{
         
     }
     .emily{
-        display: flex;
-        justify-content:flex-start;
+        .submit{
+            padding: 15px;
+            color: $grey-font;
+            font-size: 12px;
+            font-family: $font-stack;
+        }
+        h5{
+            color: $dark-grey-font;
+            font-size: 19px;
+            font-weight: bolder;
+            font-family: $font-two;
+            text-align: center;
+
+        }
+         h6{
+            color: $light-grey-font;
+            font-family: $font-stack;
+            font-size: 15px;
+            text-align: center;
+        }
     }
+     .thomas{
+        .submit{
+            padding: 15px;
+            color: $grey-font;
+            font-family: $font-stack;
+            font-size: 12px;
+        }
+        h5{
+            color: $dark-grey-font;
+            font-size: 19px;
+            font-weight: bolder;
+            font-family: $font-two;
+            text-align: center;
+
+        }
+        h6{
+            color: $light-grey-font;
+            font-family: $font-stack;
+            font-size: 15px;
+            text-align: center;
+        }
+    }
+     .jennie{
+        .submit{
+            padding: 15px;
+            color: $grey-font;
+            font-size: 12px;
+            font-family: $font-stack;
+        }
+        h5{
+            color: $dark-grey-font;
+            font-size: 19px;
+            font-weight: bolder;
+            font-family: $font-two;
+            text-align: center;
+
+        }
+        h6{
+            color: $light-grey-font;
+            font-family: $font-stack;
+            font-size: 15px;
+            text-align: center;
+        }
+    }
+   
 }
 
 .gallery{
@@ -113,6 +305,8 @@ header{
     .about{
         margin: 40px;
         font-size: 20px;
+        font-family: $font-stack;
+        font-weight: bolder;
     }
 
     .social-media{
