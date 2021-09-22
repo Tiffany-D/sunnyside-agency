@@ -1,5 +1,6 @@
 @import "./variables";
 @import"./resetcss.scss";
+@import "./media";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
      
@@ -14,6 +15,7 @@ header{
    nav{
       display: grid;
       grid-template-rows: 30%;
+
      .logo{
          width: 15vw;
          padding-left: 5vw;
@@ -29,47 +31,49 @@ header{
          li{
              padding-right:65px ;
              font-family: $font-stack;
-             font-size: 20px;
-            
+             font-size: 20px;  
          }
         
        }
    }
-   h1{
-       font-family: $font-two;
-       text-align: center;
-       color: $white-font;
-       margin-top: 4vw;
-       font-size: 7vw;
-       letter-spacing: .2rem;
+        h1{
+            font-family: $font-two;
+            text-align: center;
+            color: $white-font;
+            margin-top: 4vw;
+            font-size: 7vw;
+            letter-spacing: .2rem;
    }
-   .arrow{
-       height: 8vw;
-       padding-top: 3vw;
-        display: block;
-  margin-left: auto;
-  margin-right: auto;
+
+        .arrow{
+
+            height: 8vw;
+            padding-top: 3vw;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
    }
 
 }
-section{
-    width: 100%;
-    .row{
-        display: grid;
-        grid-template-columns: 50% 50%;
+        section{
+
+            width: 100%;
+        .row{
+            display: grid;
+            grid-template-columns: 50% 50%;
         
         
 
     }
-    .img-container img{
-        width: 58vw;
+        .img-container img{
+            width: 58vw;
 
     }
-    .text-transform{
-        width: 50%;
-        margin-left: 12vw;
-        margin-right: 15vw;
-        margin-top: 12vw;
+        .text-transform{
+            width: 50%;
+            margin-left: 12vw;
+            margin-right: 15vw;
+            margin-top: 12vw;
         
         
         h2{
@@ -143,18 +147,17 @@ section{
             }
         }
     }
-.row{
+    .row{
         display: grid;
         grid-template-columns: 50% 50%;
-        
-        
-        
+           
         
    .graphic-design{
        background-image: url(/img/image-graphic-design.jpg);
        background-size: contain;
        background-repeat: no-repeat;
        height: 50vw;
+       
       
       
        h4{
@@ -162,13 +165,17 @@ section{
            font-size: 30px;
            text-align: center;
            color: $green-title;
+           position: absolute;
+           bottom: 0;    
        }
+
        .graphic{
            font-family: $font-stack;
            font-size: 15px;
            text-align: center;
            color: $green-text;
-           
+           position: absolute;
+           bottom: 0;    
        }
 
    }
@@ -178,14 +185,13 @@ section{
        background-repeat:no-repeat;
        background-image: url(/img/image-photography.jpg);
        height: 50vw;
-    
-       
-   }
+
     h4{
            font-family: $font-two;
            font-size: 30px;
            text-align: center;
            color: $blue-title;
+           
        }
        .mandarine-p{
            font-family: $font-stack;
@@ -193,6 +199,9 @@ section{
            text-align: center;
            color: $blue-text;
        }
+}
+    .text-container{
+            padding-top: 24em
 }
 
 .comments{
@@ -202,6 +211,7 @@ section{
         grid-template-columns: 32% 32% 32%;
         margin: 20px;
     }
+
     h3{
         margin: 25px;
         text-align: center;
@@ -295,52 +305,51 @@ section{
    
 }
 
-.gallery{
+        .gallery{
     
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    img{
-        width: 30vw;
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+        img{
+            width: 30vw;
     }
 }
-.sunnyside{
-    background-color: #A9F1DF;
-    height: 30vw;
+        .sunnyside{
+            background-color: #A9F1DF;
+            height: 30vw;
 
-    .sunny{
-        margin-left: 45vw;
-        margin-right: 45vw;
-        margin-top: 7vw;
-        filter: $green-title;
+        .sunny{
+            margin-left: 45vw;
+            margin-right: 45vw;
+            margin-top: 7vw;
     }
-    .links{
-        list-style: none;
-        text-align: center;
-        display: flex;
-        align-items: stretch;
-        justify-content: center;
-        
-    }
-    .about{
-        margin: 40px;
-        font-size: 20px;
-        font-family: $font-stack;
-        font-weight: bolder;
+        .links{
+            list-style: none;
+            text-align: center;
+            display: flex;
+            align-items: stretch;
+            justify-content: center;     
     }
 
-    .social-media{
+        .about{
+            margin: 40px;
+            font-size: 20px;
+            font-family: $font-stack;
+            font-weight: bolder;
+    }
+
+        .social-media{
         
-           list-style: none;
-           
-        display: flex;
-        align-items: stretch;
-        justify-content: center; 
+            list-style: none;
+            display: flex;
+            align-items: stretch;
+            justify-content: center; 
         }
         .social{
             padding-top: 30px;
             margin: 12px;
         }
-
-    
+  
 }
 
+
+}
